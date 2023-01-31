@@ -11,7 +11,8 @@ import SwiftUI
 struct M5L14_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: FactsModel())
+                // instead of .environmentObject, calling the instance and passing it in that way
         }
     }
 }
